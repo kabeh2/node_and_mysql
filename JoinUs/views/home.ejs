@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node-MySQL Web-App</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <h1>JOIN US</h1>
+
+    <p class="lead">
+      Enter your email to join <strong><%= count %></strong> others on our
+      waitlist. We are 100% not a cult.
+    </p>
+
+    <form method="POST" action="/register">
+      <input
+        type="text"
+        class="form"
+        name="email"
+        placeholder="Enter Your Email"
+      />
+      <button>Join Now</button>
+    </form>
+  </body>
+</html>
